@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
 
-// 9 Unique Futuristic Gadgets & Tech Accessories under Rs. 4000
 const initialProducts = [
   { id: 1, name: "Smart AI Audio Glasses", price: 3900, img: "https://unsplash.com" },
   { id: 2, name: "Cyberpunk Mechanical Keyboard", price: 3400, img: "https://unsplash.com" },
@@ -64,18 +63,16 @@ function App() {
         </div>
       </nav>
 
-      {/* Admin Panel */}
       <div className="admin-section">
         <h3>🌌 Developer Console: Inject New Tech Asset</h3>
         <form onSubmit={handleAddProduct} style={{ display: 'flex', gap: '15px', flexWrap: 'wrap', alignItems: 'center' }}>
-          <input type="text" placeholder="Gadget Name (e.g. VR Set)" value={newName} onChange={(e) => setNewName(e.target.value)} style={{ padding: '8px', borderRadius: '4px', border: '1px solid #ff007f', flex: 1, background: '#111', color: '#fff' }} />
+          <input type="text" placeholder="Gadget Name" value={newName} onChange={(e) => setNewName(e.target.value)} style={{ padding: '8px', borderRadius: '4px', border: '1px solid #ff007f', flex: 1, background: '#111', color: '#fff' }} />
           <input type="number" placeholder="Price (Max 4000)" value={newPrice} onChange={(e) => setNewPrice(e.target.value)} style={{ padding: '8px', borderRadius: '4px', border: '1px solid #ff007f', width: '150px', background: '#111', color: '#fff' }} />
           <input type="text" placeholder="Image Asset URL" value={newImg} onChange={(e) => setNewImg(e.target.value)} style={{ padding: '8px', borderRadius: '4px', border: '1px solid #ff007f', flex: 1, background: '#111', color: '#fff' }} />
           <button type="submit" className="btn" style={{ width: 'auto', background: '#00ffff', color: '#000', fontWeight: 'bold' }}>Deploy Code</button>
         </form>
       </div>
 
-      {/* Tech Cards Grid */}
       <div className="product-grid">
         {products.map(product => (
           <div key={product.id} className="product-card">
@@ -87,9 +84,8 @@ function App() {
         ))}
       </div>
 
-      {/* Checkout Terminal */}
       <div className="cart-section">
-        <h2>🛰️ Core Processing Terminal (Cart)</h2>
+        <h2>🛒 Core Processing Terminal (Cart)</h2>
         {cart.length === 0 ? <p style={{color: '#666'}}>No data streams in cart memory.</p> : (
           <div>
             {cart.map(item => (
