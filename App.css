@@ -1,0 +1,117 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #0b0c10;
+  color: #c5c6c7;
+}
+
+.navbar {
+  background-color: #1f2833;
+  color: #00ffff; /* Cyber Cyan */
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ff007f; /* Neon Pink */
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+.navbar h2 {
+  margin: 0;
+  font-size: 26px;
+  letter-spacing: 3px;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
+}
+
+.admin-section {
+  background: #1f2833;
+  margin: 30px;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #ff007f;
+  box-shadow: 0 0 10px rgba(255, 0, 127, 0.1);
+}
+
+.admin-section h3 {
+  color: #ff007f;
+  margin-top: 0;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 30px;
+}
+
+.product-card {
+  background: #1f2833;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #45f3ff;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(69, 243, 255, 0.25);
+  border-color: #ff007f;
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #45f3ff;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin: 15px 0 8px;
+  color: #fff;
+}
+
+.product-card p {
+  color: #00ffff;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 0 15px;
+}
+
+.btn {
+  background-color: #00ffff;
+  color: #000;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #ff007f;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 0, 127, 0.5);
+}
+
+.cart-section {
+  background: #1f2833;
+  margin: 30px;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #45f3ff;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #45f3ff;
+  padding: 15px 0;
+}
